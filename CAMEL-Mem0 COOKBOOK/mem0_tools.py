@@ -55,7 +55,7 @@ class Mem0CloudToolkit(BaseToolkit):
             agent_id=self.agent_id,
         )
 
-    def add_memory(self, content: str, metadata: dict = None) -> str:
+    def add_memory(self, content: str, metadata: Dict = None) -> str:
         """Adds a new memory record to Mem0 cloud storage.
 
         Args:
