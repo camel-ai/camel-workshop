@@ -1,5 +1,5 @@
 import time
-from typing import Optional
+from typing import Optional, Dict
 from uuid import uuid4
 
 from camel.memories import ChatHistoryMemory
@@ -55,7 +55,7 @@ class Mem0CloudToolkit(BaseToolkit):
             agent_id=self.agent_id,
         )
 
-    def add_memory(self, content: str, metadata: Dict = None) -> str:
+    def add_memory(self, content: str, metadata: Dict[str, str] = None) -> str:
         """Adds a new memory record to Mem0 cloud storage.
 
         Args:
